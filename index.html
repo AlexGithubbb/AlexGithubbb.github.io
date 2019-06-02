@@ -7,10 +7,217 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>trillo &mdash; Your all-in-one booking app</title>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+        <link href="img/fontawesome-free-5.8.2-web/css/all.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+
+        <!--load all styles -->
+
+
+        <title>Bowei Yao - Front End Developer</title>
     </head>
     <body>
-        
+        <main class="main">
+            <header class="header">
+                <nav class="nav-bar">
+                    <div class="nav-bar__logo">
+                        <!-- <img src="img/logo.jpg" alt="logo" class="logo"> -->
+                    </div>
+                    <ul class="nav-bar__list">
+                            <a href="#" class="nav-bar__link">
+                                <svg class="about-icon">
+                                    <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                                </svg>
+                                About
+                            </a>
+                        </li>
+                            <a href="#" class="nav-bar__link">
+                                <svg class="about-icon">
+                                    <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                                </svg>
+                                Portfolio
+                            </a>
+                        </li>
+                            <a href="#" class="nav-bar__link">
+                                <svg class="about-icon">
+                                    <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                                </svg>
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </header>
+            <main class="main">
+                <div class="page-info">
+                    <div class="page-info__box">
+                        <p class="page-info__text">Hello! I'm <span class="page-info__name"><a href="#" class="page-info__name-link" alt="resume">Bowei Yao</a></span>,<br> Front End Web Developer.</p>
+                        <a href="#portfolio" class="btn btn-blue">check my work</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="gutter">
+                        <h1 class="gutter__title">About me</h1>
+                        <p class="gutter__text">Always excited to learn, design and build new things.</p>
+                    </div>
+                    <section id="intro" class="section-intro">
+                        <div class="focus">
+                            <div class="focus__part">
+                                <div class="focus__icon">
+                                    <img src="img/icon-code.svg" class="icon">
+                                    <!-- <img src="img/icon-code.png" alt="icon-code" class="icon"> -->
+                                </div>
+                                <div class="focus__details">
+                                    <h2>Code</h2>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In quibusdam adipisci delectus modi. Officia, nesciunt
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="focus__part">
+                                <div class="focus__icon">
+                                    <img src="img/icon-design.svg" class="icon">
+                                </div>
+                                <div class="focus__details">
+                                    <h2>Design</h2>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In quibusdam adipisci delectus modi. Officia,
+                                        nesciunt
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="focus__part">
+                                <div class="focus__icon">
+                                    <img src="img/icon-responsive.svg" class="icon">
+                                </div>
+                                <div class="focus__details">
+                                    <h2>Responsive</h2>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In quibusdam adipisci delectus modi. Officia,
+                                        nesciunt
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile">
+                            <figure class="profile__photo">
+                                <img src="" alt="">
+                            </figure>
+                            <div class="profile__text">
+                                <h2>Who am I？</h2>
+                                <p>
+                                    I'm a Dominican Republic based full stack developer, I'm always looking for an opportunity to code, design and
+                                    learn
+                                    new
+                                    things. Before becoming a developer I used to study architecture where I learned a lot about planning, design
+                                    and
+                                    keeping things simple, something I tend to do at everything that I do in life. In my spare time I'm usually
+                                    building
+                                    things and searching for new skills to learn. I also speak Spanish, enjoy watching movies and traveling to
+                                    exciting
+                                    places.
+                                </p>
+                            </div>
+                            <div class="skills">
+                                <span> • HTML</span>
+                                <span> • CSS</span>
+                                <span> • Sass</span>
+                                <span> • BEM</span>
+                                <span> • JavaScript</span>
+                                <span> • React.js</span>
+                                <span> • JQuery</span>
+                                <span> • Node.js</span><br>
+                                <span> • MongoDB</span>
+                                <span> • Git</span>
+                                <span> • Github</span>
+
+                            </div>
+                        </div>
+                    </section>
+                    <div class="gutter" >
+                        <h1 class="gutter__title">Portfolio</h1>
+                        <p class="gutter__text">Some of my favorite projects.</p>
+                    </div>
+                    <section id = "portfolio" class="section-portfolio" >
+                        <div class="cards">
+                            <div class="card">
+                                <div class="card-thumbnail">
+                                    <a href="#" target="_blank">
+                                        <img src="img/4.jpeg" alt="project-preview" class="card-image">
+                                    </a>
+                                </div>
+                                <div class="card-description">
+                                    <div class="card-title">project</div>
+                                    <div class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ad ducimus alias veniam eaque.
+                                    </div>
+                                    <a href="#" class="card-github">Github <i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-thumbnail">
+                                    <a href="#" target="_blank">
+                                        <img src="img/4.jpeg" alt="project-preview" class="card-image">
+                                    </a>
+                                </div>
+                                <div class="card-description">
+                                    <div class="card-title">project</div>
+                                    <div class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ad ducimus alias
+                                        veniam eaque.
+                                    </div>
+                                    <a href="#" class="card-github">Github <i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-thumbnail">
+                                    <a href="#" target="_blank">
+                                        <img src="img/4.jpeg" alt="project-preview" class="card-image">
+                                    </a>
+                                </div>
+                                <div class="card-description">
+                                    <div class="card-title">project</div>
+                                    <div class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ad ducimus alias
+                                        veniam eaque.
+                                    </div>
+                                    <a href="#" class="card-github">Github <i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-thumbnail">
+                                    <a href="#" target="_blank">
+                                        <img src="img/4.jpeg" alt="project-preview" class="card-image">
+                                    </a>
+                                </div>
+                                <div class="card-description">
+                                    <div class="card-title">project</div>
+                                    <div class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ad ducimus alias
+                                        veniam eaque.
+                                    </div>
+                                    <a href="#" class="card-github">Github <i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-thumbnail">
+                                    <a href="#" target="_blank">
+                                        <img src="img/4.jpeg" alt="project-preview" class="card-image">
+                                    </a>
+                                </div>
+                                <div class="card-description">
+                                    <div class="card-title">project</div>
+                                    <div class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ad ducimus alias
+                                        veniam eaque.
+                                    </div>
+                                    <a href="#" class="card-github">Github <i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="gutter">
+                        <h1 class="gutter__title">Contact</h1>
+                        <p class="gutter__text">Any question or you want to work together?</p>
+                    </div>
+                    <section id="contact" class="contact">
+                        
+                    </section>
+                </div>
+            </main>
+        </main>
     </body>
 </html>

@@ -1,0 +1,64 @@
+/*
+COLORS
+
+Primary: #eb2f64
+Primary light: #FF3366
+Primary dark: #BA265D
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+
+$--color-secondary:#230d75;
+$--color-secondary-light:#434366;
+$--color-secondary-dark:#2c2b3b;
+
+
+
+
+
+:root{
+// --color-primary:#002645;
+--color-primary:#012c50;
+--color-primary-light:#003764;
+--color-primary-dark:#01223d;
+
+--color-grey-1: #c8c8c8;
+--color-grey-2: #9b9b9b;
+--color-grey-3: #646363;
+
+--nunito:'Nunito', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+$absCenter: translate(-50%, -50%);
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+
+html{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  // font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  position: relative;
+  background-color: rgb(245, 245, 245);
+}
