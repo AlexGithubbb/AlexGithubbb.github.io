@@ -4,44 +4,44 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
         <link href="img/fontawesome-free-5.8.2-web/css/all.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
 
+        <!-- the fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap" rel="stylesheet">
+
+        
         <!--load all styles -->
 
 
-        <title>Bowei Yao - Front End Developer</title>
+        <title> Bowei Yao | Front End Developer</title>
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
     </head>
     <body>
-        <main class="main">
-            <header class="header">
+
+            <header id = "home" class="header">
                 <nav class="nav-bar">
                     <div class="nav-bar__logo">
-                        <!-- <img src="img/logo.jpg" alt="logo" class="logo"> -->
+                        <p class="logo">BoY</p>
+                        <!-- <img src="img/logo1.png" alt="logo" class="logo"> -->
                     </div>
                     <ul class="nav-bar__list">
-                            <a href="#" class="nav-bar__link">
-                                <svg class="about-icon">
-                                    <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
-                                </svg>
+                            <a href="#intro" class="nav-bar__link">
+                                <i class="far fa-smile-wink about-icon"></i>
                                 About
                             </a>
                         </li>
-                            <a href="#" class="nav-bar__link">
-                                <svg class="about-icon">
-                                    <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
-                                </svg>
+                            <a href="#portfolio" class="nav-bar__link">
+                                <i class="fas fa-cog about-icon"></i>
                                 Portfolio
                             </a>
                         </li>
-                            <a href="#" class="nav-bar__link">
-                                <svg class="about-icon">
-                                    <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
-                                </svg>
+                            <a href="#contact" class="nav-bar__link">
+                                <i class="far fa-paper-plane about-icon"></i>
                                 Contact
                             </a>
                         </li>
@@ -104,16 +104,8 @@
                             <div class="profile__text">
                                 <h2>Who am I？</h2>
                                 <p>
-                                    I'm a Dominican Republic based full stack developer, I'm always looking for an opportunity to code, design and
-                                    learn
-                                    new
-                                    things. Before becoming a developer I used to study architecture where I learned a lot about planning, design
-                                    and
-                                    keeping things simple, something I tend to do at everything that I do in life. In my spare time I'm usually
-                                    building
-                                    things and searching for new skills to learn. I also speak Spanish, enjoy watching movies and traveling to
-                                    exciting
-                                    places.
+                                    I'm a Front end developer, always looking for an opportunity to code, design and
+                                    learn new things. I got started to show my interests in web development field when I was at 2nd year of my Electrical&Computer master's degree. I have been being into drawing and designing since very little age. In my spare time I'm usually building things and searching for new skills to learn. I also speak Mandrain, enjoy bicycling and friends board gaming.
                                 </p>
                             </div>
                             <div class="skills">
@@ -124,7 +116,7 @@
                                 <span> • JavaScript</span>
                                 <span> • React.js</span>
                                 <span> • JQuery</span>
-                                <span> • Node.js</span><br>
+                                <span> • Node.js</span>
                                 <span> • MongoDB</span>
                                 <span> • Git</span>
                                 <span> • Github</span>
@@ -140,84 +132,133 @@
                         <div class="cards">
                             <div class="card">
                                 <div class="card-thumbnail">
-                                    <a href="#" target="_blank">
-                                        <img src="img/4.jpeg" alt="project-preview" class="card-image">
+                                    <a href="https://alexgithubbb.github.io/BackgroundGenerator.github.io/" target="_blank">
+                                        <img src="img/BG.png" alt="project-preview" class="card-image">
                                     </a>
                                 </div>
                                 <div class="card-description">
-                                    <div class="card-title">project</div>
+                                    <div class="card-title">Background Generator</div>
                                     <div class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ad ducimus alias veniam eaque.
                                     </div>
-                                    <a href="#" class="card-github">Github <i class="fab fa-github"></i></a>
+                                    <a href="https://github.com/AlexGithubbb/BackgroundGenerator.github.io" class="card-github" target="_blank">Github <i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-thumbnail">
-                                    <a href="#" target="_blank">
-                                        <img src="img/4.jpeg" alt="project-preview" class="card-image">
+                                    <a href="https://alexgithubbb.github.io/robopals/" target="_blank">
+                                        <img src="img/robopals.png" alt="project-preview" class="card-image">
                                     </a>
                                 </div>
                                 <div class="card-description">
-                                    <div class="card-title">project</div>
-                                    <div class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ad ducimus alias
-                                        veniam eaque.
+                                    <div class="card-title">Robopals</div>
+                                    <div class="card-text">Created my first ReactJS app from the Web Bootcamp course by Andrew, this robot searching app uses robots database API. A dynamic design and fun experience.
                                     </div>
-                                    <a href="#" class="card-github">Github <i class="fab fa-github"></i></a>
+                                    <a href="https://github.com/AlexGithubbb/robopals" class="card-github" target="_blank">Github <i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-thumbnail">
-                                    <a href="#" target="_blank">
+                                    <a href="https://alexgithubbb.github.io/burgerbuilder/" target="_blank">
                                         <img src="img/4.jpeg" alt="project-preview" class="card-image">
                                     </a>
                                 </div>
                                 <div class="card-description">
-                                    <div class="card-title">project</div>
+                                    <div class="card-title">Burger Builder</div>
                                     <div class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ad ducimus alias
                                         veniam eaque.
                                     </div>
-                                    <a href="#" class="card-github">Github <i class="fab fa-github"></i></a>
+                                    <a href="https://github.com/AlexGithubbb/burgerbuilder" class="card-github" target="_blank">Github <i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-thumbnail">
-                                    <a href="#" target="_blank">
-                                        <img src="img/4.jpeg" alt="project-preview" class="card-image">
+                                    <a href="https://alexgithubbb.github.io/budgetCalculator/" target="_blank">
+                                        <img src="img/budgetCalc.png" alt="project-preview" class="card-image">
                                     </a>
                                 </div>
                                 <div class="card-description">
-                                    <div class="card-title">project</div>
+                                    <div class="card-title">Budget Calculator</div>
                                     <div class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ad ducimus alias
                                         veniam eaque.
                                     </div>
-                                    <a href="#" class="card-github">Github <i class="fab fa-github"></i></a>
+                                    <a href="https://github.com/AlexGithubbb/budgetCalculator" class="card-github" target="_blank">Github <i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-thumbnail">
-                                    <a href="#" target="_blank">
-                                        <img src="img/4.jpeg" alt="project-preview" class="card-image">
+                                    <a href="https://alexgithubbb.github.io/Natours/" target="_blank">
+                                        <img src="img/Natours1.png" alt="project-preview" class="card-image">
                                     </a>
                                 </div>
                                 <div class="card-description">
-                                    <div class="card-title">project</div>
+                                    <div class="card-title">Natours</div>
                                     <div class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ad ducimus alias
                                         veniam eaque.
                                     </div>
-                                    <a href="#" class="card-github">Github <i class="fab fa-github"></i></a>
+                                    <a href="https://github.com/AlexGithubbb/Natours" class="card-github" target="_blank">Github <i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                         </div>
                     </section>
                     <div class="gutter">
                         <h1 class="gutter__title">Contact</h1>
-                        <p class="gutter__text">Any question or you want to work together?</p>
+                        <p class="gutter__text">Got a question? I'd love to hear from you. Send me a message and I will respond as soon as possible.</p>
                     </div>
                     <section id="contact" class="contact">
-                        
+                        <div class="contact-box">
+                            <div class="info">
+                                <div class="info-box">
+                                    <div class="info-group">
+                                        <h2>Let's get in touch!</h2>
+                                    </div>
+                                    <div class="info-group">
+                                        <i class="fa fa-envelope info__icon" aria-hidden="true"></i>
+                                        <p class="info">yaobowei333@gmail.com</p>
+                                    </div>
+                                    <div class="info-group">
+                                        <i class="fas fa-map-marker-alt info__icon"></i>
+                                        <p class="info">Mississauga, Ontario, Canada</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="#" class="form">
+                                <div class="form__group">
+                                    <input type="text" class="form__input" id="name" placeholder="Name" required>
+                                    <!-- <label class="form__label" for="name">Name </label> -->
+                                    <i class="fa fa-user form__icon" aria-hidden="true"></i>
+                                </div>
+                                <div class="form__group">
+                                    <input type="email" class="form__input" id="email" placeholder="Email" required>
+                                    <!-- <label class="form__label" for="email">Email </label> -->
+                                    <i class="fa fa-envelope form__icon" aria-hidden="true"></i>
+                                </div>
+                                <div class="form__group">
+                                    <textarea type="text" class="form__input" placeholder="Message" rows='8'></textarea>
+                                    <i class="fas fa-edit form__icon"></i>
+                                </div>
+                                <div class="form__group">
+                                    <button class="btn btn--blue">Send Message &rarr;</button>
+                                </div>
+                            </form>
+                        </div>
                     </section>
                 </div>
+                <footer class="footer">
+                    <div class="container">
+                        <span class="copyright">&copy;2019 <span class="copyright__name">Bowei Yao</span></span>
+                        <div class="nav">
+                            <a href="#home" class="nav__link">Home</a><span> | </span>
+                            <a href="#intro" class="nav__link">About</a><span> | </span>
+                            <a href="#portfolio" class="nav__link">Portfolio</a>
+                        </div>
+                        <div class="media">
+                            <a href="https://github.com/AlexGithubbb" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/bowei-yao-2a11b1128/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://codepen.io/dashboard?type=view&opts_itemType=pen&opts_filter=all&opts_orderBy=id&opts_orderDirection=0&opts_tag=0&displayType=grid&previewType=screenshot&page=0" target="_blank"><i class="fab fa-codepen"></i></a>
+                            <a href="https://www.facebook.com/profile.php" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </footer>
             </main>
-        </main>
     </body>
 </html>
