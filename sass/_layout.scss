@@ -42,8 +42,11 @@
 
 .contact{
   padding: 5rem 0;
-   @media only screen and (max-width: $phone){
+   @media only screen and (max-width: $ipad){
       padding: 2rem 0;
+    }
+   @media only screen and (max-width: $phone){
+      padding: 1rem 0;
     }
 }
 

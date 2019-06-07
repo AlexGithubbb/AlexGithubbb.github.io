@@ -79,9 +79,12 @@ body {
 
 .contact {
   padding: 5rem 0; }
-  @media only screen and (max-width: 28.5em) {
+  @media only screen and (max-width: 50em) {
     .contact {
       padding: 2rem 0; } }
+  @media only screen and (max-width: 28.5em) {
+    .contact {
+      padding: 1rem 0; } }
 
 footer {
   padding: 3rem;
@@ -558,8 +561,9 @@ footer {
       height: 25rem; } }
   @media only screen and (max-width: 28.5em) {
     .contact-box {
-      width: 90%;
-      height: 23rem; } }
+      width: 95%;
+      height: 23rem;
+      border-radius: 5px; } }
   .contact-box .info {
     width: 50%;
     position: relative; }

@@ -582,8 +582,9 @@
         height: 25rem;
     }
    @media only screen and (max-width: $phone){
-        width: 90%;
+        width: 95%;
         height: 23rem;
+        border-radius: 5px;
     }
   .info{
     width: 50%;
