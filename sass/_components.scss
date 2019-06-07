@@ -103,10 +103,10 @@
       height:45vh;
     }
      @media only screen and (max-width: $phone){
-          height: 50vh;
+          height: 40vh;
         }
   &__box{
-    width: 50rem;
+    width: 70%;
     height: 20rem;
     position: absolute;
     top: 50%;
@@ -116,12 +116,12 @@
     background-color: transparent;
     padding: 3rem;
      @media only screen and (max-width: $ipad){
+      width: 80%;
       top: 55%;
-      left: 50%;
     }
-     @media only screen and (max-width: $ipad){
-      top: 65%;
-      left: 50%;
+     @media only screen and (max-width: $phone){
+      width: 100%;
+      top: 70%;
     }
 
   }
@@ -144,7 +144,7 @@
     }
     @media only screen and (max-width: $phone){
       font-size: 1.5rem;
-      letter-spacing: .6px;
+      letter-spacing: .4px;
       margin-bottom: 1rem;
     }
   }
@@ -295,6 +295,12 @@
 .focus{
     display: flex;
     justify-content: center;
+    @media only screen and (max-width: $phone){
+        display: flex;
+        flex-direction: column;
+        padding: 0 3rem;
+
+    }
     &__part{
       flex: 0 0 23%;
       text-align: center;
@@ -304,7 +310,8 @@
         &:not(:last-child){
           margin-right: 3rem;
           @media only screen and (max-width: $phone){
-            margin-right: 1rem;
+            margin-right: 0rem;
+            margin-bottom: 1rem;
             }
         }
     }
@@ -322,6 +329,7 @@
        @media only screen and (max-width: $phone){
         width: 3.5rem;
           height: 3.5rem;
+          margin-bottom: .5rem;
         }
 
       @supports( -webkit-clip-path: circle(49% at 50% 50%)) or (clip-path: circle(49% at 50% 50%)){
@@ -344,6 +352,7 @@
       }
       @media only screen and (max-width: $phone){
      font-size: 1rem;
+     margin-bottom: .5rem;
     }
     }
   }
@@ -427,7 +436,7 @@
         }
      @media only screen and (max-width: $phone){
            width: 100%;
-           transform: translateX(0rem);
+           transform: translateX(1rem);
            padding: 0;
         }
     span{
