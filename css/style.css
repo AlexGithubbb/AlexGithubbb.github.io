@@ -457,10 +457,11 @@ footer {
         transform: translateX(0rem); } }
     @media only screen and (max-width: 28.5em) {
       .profile .skills {
-        width: 90%;
+        width: 100%;
         margin-top: 0;
-        margin-left: 3rem;
-        padding: 0; } }
+        margin-left: 0rem;
+        padding: 0;
+        text-align: center; } }
     .profile .skills span {
       display: inline-block; }
     .profile .skills > * {
