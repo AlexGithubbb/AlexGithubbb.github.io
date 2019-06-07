@@ -176,11 +176,14 @@ footer {
     @media only screen and (max-width: 50em) {
       .page-info__box {
         width: 80%;
-        top: 55%; } }
+        height: 17rem;
+        padding: 2rem; } }
     @media only screen and (max-width: 28.5em) {
       .page-info__box {
         width: 100%;
-        top: 70%; } }
+        height: 10rem;
+        top: 55%;
+        padding: 1rem; } }
   .page-info__text {
     display: block;
     font-family: var(--nunito);
@@ -197,7 +200,7 @@ footer {
       .page-info__text {
         font-size: 2.5rem;
         letter-spacing: 1px;
-        margin-bottom: 3rem; } }
+        margin-bottom: 2rem; } }
     @media only screen and (max-width: 28.5em) {
       .page-info__text {
         font-size: 1.5rem;
@@ -381,16 +384,17 @@ footer {
   width: 80%;
   padding: 2rem 1rem;
   background-color: transparent;
-  margin: 2rem auto; }
+  margin: 3rem auto 0 auto; }
   @media only screen and (max-width: 65em) {
     .profile {
+      width: 90%;
       padding: 1.5rem .5rem;
-      margin: 1.5rem auto; } }
+      margin: 2rem auto 0 auto; } }
   @media only screen and (max-width: 50em) {
     .profile {
-      width: 90%;
+      width: 100%;
       padding: 0;
-      margin: 1.5rem auto 0 auto; } }
+      margin-top: 3rem; } }
   @media only screen and (max-width: 28.5em) {
     .profile {
       display: flex;
@@ -398,16 +402,16 @@ footer {
       align-items: center; } }
   .profile__photo {
     float: left;
-    width: 11rem;
-    height: 11rem;
+    width: 12rem;
+    height: 12rem;
     background-color: #2979d4;
     shape-outside: circle(47% at 43% 57%);
     border-radius: 50%;
     transform: translateX(2rem); }
     @supports (-webkit-clip-path: circle(49% at 50% 50%)) or (clip-path: circle(49% at 50% 50%)) {
       .profile__photo {
-        -webkit-clip-path: circle(49% at 50% 50%);
-        clip-path: circle(49% at 50% 50%); } }
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%); } }
     @media only screen and (max-width: 50em) {
       .profile__photo {
         width: 9rem;
@@ -418,7 +422,7 @@ footer {
         height: 6.5rem;
         transform: translateX(0rem); } }
   .profile__text {
-    width: 80%;
+    width: 88%;
     line-height: 2;
     transform: translate(5rem, -10px); }
     @media only screen and (max-width: 50em) {
@@ -427,12 +431,14 @@ footer {
         line-height: 2; } }
     @media only screen and (max-width: 28.5em) {
       .profile__text {
-        width: 100%;
+        width: 90%;
         transform: translate(0);
         line-height: 2;
-        margin-top: 1rem; } }
-    .profile__text h2 {
-      text-align: center; }
+        margin-top: 1rem; }
+        .profile__text h2 {
+          text-align: center; }
+        .profile__text p {
+          margin-bottom: 1rem; } }
   .profile .skills {
     width: 65%;
     color: #3429d4;
@@ -442,28 +448,31 @@ footer {
     padding: 0 1rem; }
     @media only screen and (max-width: 50em) {
       .profile .skills {
-        width: 100%;
+        width: 70%;
+        padding: 0rem;
+        margin: 1rem 0 0 5rem;
         transform: translateX(0rem); } }
     @media only screen and (max-width: 28.5em) {
       .profile .skills {
-        width: 100%;
-        transform: translateX(1rem);
+        width: 90%;
+        margin-top: 0;
+        margin-left: 3rem;
         padding: 0; } }
     .profile .skills span {
       display: inline-block; }
     .profile .skills > * {
       font-size: 1.1rem;
-      font-weight: 700;
+      font-weight: 500;
       margin-right: .5rem; }
       @media only screen and (max-width: 50em) {
         .profile .skills > * {
           font-size: 1rem;
-          font-weight: 600;
+          font-weight: 500;
           margin-right: .4rem; } }
       @media only screen and (max-width: 28.5em) {
         .profile .skills > * {
           font-size: .8rem;
-          font-weight: 600;
+          font-weight: 500;
           margin-right: .3rem; } }
 
 .cards {
@@ -542,15 +551,15 @@ footer {
   @media only screen and (max-width: 65em) {
     .contact-box {
       width: 70%;
-      height: 25rem; } }
+      height: 30rem; } }
   @media only screen and (max-width: 50em) {
     .contact-box {
       width: 80%;
-      height: 22rem; } }
+      height: 25rem; } }
   @media only screen and (max-width: 28.5em) {
     .contact-box {
       width: 90%;
-      height: 22rem; } }
+      height: 23rem; } }
   .contact-box .info {
     width: 50%;
     position: relative; }
@@ -599,20 +608,26 @@ footer {
         width: 100%; } }
     .form__group:not(:last-child) {
       margin-bottom: 2rem; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 65em) {
+        .form__group:not(:last-child) {
+          margin-bottom: 1.5rem; } }
+      @media only screen and (max-width: 28.5em) {
         .form__group:not(:last-child) {
           margin-bottom: 1rem; } }
     .form__group:last-child {
       text-align: center;
       margin-top: 2rem; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 65em) {
         .form__group:last-child {
-          margin-top: 1.5rem; } }
+          margin-top: 0rem; } }
   .form__icon {
     position: absolute;
-    top: .8rem;
+    top: .6rem;
     left: .5rem;
     color: rgba(0, 0, 0, 0.5); }
+    @media only screen and (max-width: 65em) {
+      .form__icon {
+        top: .5rem; } }
   .form__input {
     width: 100%;
     font-size: 1rem;
@@ -626,6 +641,9 @@ footer {
     @media only screen and (max-width: 50em) {
       .form__input {
         padding: .5rem 1.5rem .5rem 1.8rem; } }
+    @media only screen and (max-width: 28.5em) {
+      .form__input {
+        padding: .5rem 1.5rem .5rem 2rem; } }
     .form__input:focus {
       outline: none;
       box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
@@ -634,12 +652,21 @@ footer {
         background-color: #f8d9d9; }
     .form__input::-webkit-input-placeholder {
       color: rgba(0, 0, 0, 0.5); }
+  .form input.large {
+    display: inline-block; }
+  .form input.small {
+    display: none; }
+  @media only screen and (max-width: 28.5em) {
+    .form input.small {
+      display: inline-block; }
+    .form input.large {
+      display: none; } }
   .form textarea {
     width: 100%;
     height: auto; }
     @media only screen and (max-width: 50em) {
       .form textarea {
-        height: 7rem; } }
+        height: 9rem; } }
 
 @media only screen and (max-width: 28.5em) {
   .btn--form {
