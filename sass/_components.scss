@@ -3,13 +3,11 @@
   justify-content: space-between;
   height: 4rem;
   padding-left: 4rem;
+  @media only screen and (max-width: $phone){
+   height: 3rem;
+   padding-left: 0rem;
+  }
   &__logo{
-      // display: block;
-      // clip-path: circle(40% at 50% 50%);
-      // margin-left: 4rem;
-      // background-color: white;
-      // border-radius: 50%;
-      // border: 2px solid red;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -18,6 +16,9 @@
         color: #2979d4;
         font-weight: 700;
         font-family: 'Dancing Script', cursive;
+        @media only screen and (max-width: $phone){
+          display: none;
+        }
         // clip-path: circle(42% at 50% 50%);
         // background-color: #ffffff;
 
@@ -28,8 +29,14 @@
   &__list{
     list-style: none;
     color: white;
+    width: 30%;
     display: flex;
     margin-right: 3rem;
+        @media only screen and (max-width: $phone){
+          width: 60%;
+          margin-right: 0rem;
+          width: 100%;
+        }
   }
 
   // &__item{
@@ -55,6 +62,10 @@
     font-weight: 300;
     font-size: .8rem;
     font-family: var(--nunito);
+        @media only screen and (max-width: $phone){
+          font-size: .5rem;
+          width: calc(100% / 3);
+        }
 
      transition: background-color, .3s;
       &:hover{
@@ -65,6 +76,9 @@
     .about-icon{
       margin-bottom: .2rem;
       font-size: 1rem;
+      @media only screen and (max-width: $phone){
+         font-size: .7rem;
+        }
     }
 }
 
@@ -81,6 +95,16 @@
                                     url(../img/imac-bgp.jpg);
   background-size: cover;
   position: relative;
+
+  @media only screen and (max-width: $ipad-pro){
+      height:50vh;
+    }
+  @media only screen and (max-width: $ipad){
+      height:45vh;
+    }
+     @media only screen and (max-width: $phone){
+          height: 50vh;
+        }
   &__box{
     width: 50rem;
     height: 20rem;
@@ -91,6 +115,15 @@
     text-align: center;
     background-color: transparent;
     padding: 3rem;
+     @media only screen and (max-width: $ipad){
+      top: 55%;
+      left: 50%;
+    }
+     @media only screen and (max-width: $ipad){
+      top: 65%;
+      left: 50%;
+    }
+
   }
   &__text{
     display: block;
@@ -99,30 +132,22 @@
     letter-spacing: 1px;
     margin-bottom: 4rem;
     color: white;
+    @media only screen and (max-width: $ipad-pro){
+     font-size: 3rem;
+      letter-spacing: 1px;
+      margin-bottom: 3rem;
+    }
+    @media only screen and (max-width: $ipad){
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+      margin-bottom: 3rem;
+    }
+    @media only screen and (max-width: $phone){
+      font-size: 1.5rem;
+      letter-spacing: .6px;
+      margin-bottom: 1rem;
+    }
   }
-
-  // &__name{
-  //   font-size:3.5rem;
-  //   font-weight: 400;
-  //   display: inline-block;
-  //   background-color: rgba(255,255,255, .45);
-  //   border-radius: 30px;
-  //   padding: 0px;
-  //   transform: scale(.9);
-  //   cursor: pointer;
-  //   transition: all, .1s;
-
-
-  //   &:hover{
-  //     transform: scale(1);
-  //   }
-  //   &-link,
-  //   &-link:link,
-  //   &-link:visited{
-  //     text-decoration: none;
-  //     color: #110b62;
-  //   }
-  // }
 
   &__name{
     font-size:3.5rem;
@@ -134,7 +159,15 @@
     transform: scale(.98);
     cursor: pointer;
     transition: all, .1s;
-
+    @media only screen and (max-width: $ipad-pro){
+     font-size: 3rem;
+    }
+    @media only screen and (max-width: $ipad){
+       font-size: 2.5rem;
+    }
+    @media only screen and (max-width: $phone){
+      font-size: 1.5rem;
+    }
 
     &:hover{
       transform: scale(1.05);
@@ -164,12 +197,23 @@
   border-radius: 40px;
   font-size: 1rem;
   font-weight: 500;
-  background-color: rgba(47, 36, 212, 0.966);
+  // background-color: rgba(47, 36, 212, 0.966);
+  background-color: #2979d4;
   border: 3px solid white;
   color: white;
   outline: none;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
   transition: all, .4s;
+  @media only screen and (max-width: $ipad){
+       width: 10rem;
+       font-size: .8rem;
+       padding: .5rem 1rem;
+    }
+  @media only screen and (max-width: $phone){
+    font-size: .6rem;
+    width: 7rem;
+    padding: .5rem;
+  }
 }
 
 .btn:hover {
@@ -180,6 +224,12 @@
   background-color: rgba(255,255,255, .95);
   border: 4px solid rgba(57, 20, 192, 0.918);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  @media only screen and (max-width: $ipad){
+    width: 10rem;
+  }
+  @media only screen and (max-width: $phone){
+    width: 7rem;
+  }
  }
 
 .btn:hover::after {
@@ -202,17 +252,41 @@
   text-align: center;
   color: #fff;
   padding: 1rem;
+   @media only screen and (max-width: $ipad-pro){
+      padding: .6rem;
+   }
   & > *{
     margin-bottom: 1rem;
+    @media only screen and (max-width: $ipad){
+     margin-bottom: .5rem;
+    }
+    @media only screen and (max-width: $phone){
+     margin-bottom: 0rem;
+    }
   }
   &__title{
     font-size: 3rem;
     font-family: var(--nunito);
     font-weight: 300;
+    @media only screen and (max-width: $ipad-pro){
+      font-size: 2.5rem;
+    }
+    @media only screen and (max-width: $ipad){
+      font-size: 2rem;
+    }
+    @media only screen and (max-width: $phone){
+     font-size: 1.5rem;
+  }
   }
   &__text{
     font-size: 1.2rem;
     font-weight: 300;
+     @media only screen and (max-width: $ipad){
+      font-size: 1rem;
+    }
+    @media only screen and (max-width: $phone){
+          font-size: .7rem;
+  }
   }
 }
 
@@ -221,12 +295,17 @@
 .focus{
     display: flex;
     justify-content: center;
-    padding: 1.5rem 5rem;
     &__part{
       flex: 0 0 23%;
       text-align: center;
+      @media only screen and (max-width: $ipad){
+      flex: 0 0 25%;
+      }
         &:not(:last-child){
           margin-right: 3rem;
+          @media only screen and (max-width: $phone){
+            margin-right: 1rem;
+            }
         }
     }
     &__icon{
@@ -236,6 +315,14 @@
       background-image: linear-gradient(to right bottom, rgb(73, 39, 226), rgba(42, 19, 144, 0.787));
       margin-bottom: 1rem;
       border-radius: 50%;
+      @media only screen and (max-width: $ipad){
+      width: 5rem;
+      height: 5rem;
+      }
+       @media only screen and (max-width: $phone){
+        width: 3.5rem;
+          height: 3.5rem;
+        }
 
       @supports( -webkit-clip-path: circle(49% at 50% 50%)) or (clip-path: circle(49% at 50% 50%)){
         -webkit-clip-path: circle(49% at 50% 50%);
@@ -252,14 +339,15 @@
     h2{
       font-size: 1.5rem;
       margin-bottom: 1rem;
+       @media only screen and (max-width: $ipad){
+      font-size: 1.2rem;
+      }
+      @media only screen and (max-width: $phone){
+     font-size: 1rem;
     }
-    p{
-      font-size: .8rem;
     }
   }
 }
-
-
 ///////////////////////////////////////////////////
 // PROFILE//
 .profile{
@@ -267,6 +355,24 @@
   padding: 2rem 1rem;
   background-color: transparent;
   margin: 2rem auto;
+  @media only screen and(max-width:$ipad-pro){
+    padding: 1.5rem .5rem;
+    margin: 1.5rem auto;
+  }
+  @media only screen and(max-width:$ipad){
+    width: 90%;
+    padding: 0;
+    margin: 1.5rem auto 0 auto;
+  }
+  @media only screen and (max-width: $phone){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // width: 90%;
+    // padding: 0;
+    // margin: 2rem auto 0 auto;
+            }
+  
   &__photo{
       float: left;
       width: 11rem;
@@ -279,13 +385,33 @@
         -webkit-clip-path: circle(49% at 50% 50%);
         clip-path: circle(49% at 50% 50%);
       }
+        @media only screen and (max-width: $ipad){
+          width: 9rem;
+          height: 9rem;
+        }
+        @media only screen and (max-width: $phone){
+          width: 6.5rem;
+          height: 6.5rem;
+          transform: translateX(0rem);
+        }
   }
 
   &__text{
     width: 80%;
+    line-height: 2;
     transform: translate(5rem, -10px);
-    p{
-      font-size: .8rem;
+    @media only screen and (max-width: $ipad){
+           transform: translate(4rem, -8px);
+           line-height: 2;
+        }
+    @media only screen and (max-width: $phone){
+          width: 100%;
+           transform: translate(0);
+           line-height: 2;
+           margin-top: 1rem;
+        }
+    h2{
+      text-align: center;
     }
   }
   .skills{
@@ -295,10 +421,32 @@
     margin: 1rem 0 0 1rem;
     transform: translateX(3rem);
     padding: 0 1rem;
+     @media only screen and (max-width: $ipad){
+           width: 100%;
+           transform: translateX(0rem);
+        }
+     @media only screen and (max-width: $phone){
+           width: 100%;
+           transform: translateX(0rem);
+           padding: 0;
+        }
+    span{
+      display: inline-block;
+    }
     & > *{
       font-size: 1.1rem;
       font-weight: 700;
       margin-right: .5rem;
+      @media only screen and (max-width: $ipad){
+           font-size: 1rem;
+          font-weight: 600;
+          margin-right: .4rem;
+        }
+      @media only screen and (max-width: $phone){
+           font-size: .8rem;
+          font-weight: 600;
+          margin-right: .3rem;
+        }
     }
   }
 }
@@ -320,6 +468,17 @@
     background-color: #fff;
     box-shadow: 0rem 2px 5px rgba(0, 0, 0, 0.8);
     transition: all, .2s;
+    // text-align: center;
+
+     @media only screen and (max-width: $ipad){
+       width: calc(100% / 2 - 3rem);
+       margin: 1.5rem;
+    }
+    @media only screen and (max-width: $phone){
+         width: 90%;
+         margin: 1rem auto;
+         border-radius: 3px;
+  }
 
     &:hover{
       transform: scale(1.02);
@@ -330,6 +489,9 @@
     &-thumbnail{
       width: 100%;
       height: 50%;
+       @media only screen and (max-width: $phone){
+         height: 60%;
+      }
     }
     &-image{
       width: 100%;
@@ -337,14 +499,22 @@
     }
 
     &-description{
-      height: 40%;
+      height: 50%;
       font-weight: 300;
       text-align: center;
       padding: .5rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media only screen and (max-width: $phone){
+         height: 45%;
+      }
+
     }
     &-title{
       font-family: var(--nunito);
-      font-size: 1.6rem;
+      font-size: 1.3rem;
       font-weight: 400;
     }
 
@@ -356,6 +526,8 @@
     }
 
     &-github{
+      position: absolute;
+      bottom: 1rem;
       text-decoration: none;
        color:var(--color-grey-2);
       &:hover{
@@ -380,9 +552,27 @@
   display: flex;
   overflow: hidden;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.5);
+  @media only screen and (max-width: $ipad-pro){
+      width: 70%;
+    height: 25rem;
+  }
+   @media only screen and (max-width: $ipad){
+        width: 80%;
+        height: 22rem;
+    }
+   @media only screen and (max-width: $phone){
+        width: 90%;
+        height: 22rem;
+    }
   .info{
     width: 50%;
     position: relative;
+    @media only screen and (max-width: $ipad-pro){
+      width: 45%;
+    }
+    @media only screen and (max-width: $phone){
+      display: none;
+    }
     &-box{
       width: 70%;
       position: absolute;
@@ -391,13 +581,20 @@
 
       color: #fff;
       font-size: .8rem;
+
+      @media only screen and (max-width: $ipad-pro){
+      width: 90%;
+    }
       }
     &-group{
       width: 100%;
       display: flex;
       margin-bottom: 3rem;
       align-items: center;
-      .info{
+      @media only screen and (max-width: $ipad){
+        margin-bottom: 2rem;
+    }
+      .text{
         width: 100%;
         margin-left: 1rem;
       }
@@ -411,25 +608,33 @@
 // FORM//
 
 .form{
-  width: 50%;
+  width: 55%;
   margin: 0 auto;
   padding: 2rem;
-
-  
   background-image: linear-gradient(to bottom, rgb(94, 61, 243), rgba(30, 13, 109, 0.787));
-  
+   @media only screen and (max-width: $phone){
+      width: 100%;
+    }
     &__group{
       width: 90%;
       margin: 0 auto;
       position: relative;
-
+       @media only screen and (max-width: $phone){
+          width: 100%;
+        }
 
       &:not(:last-child){
          margin-bottom: 2rem;
+         @media only screen and (max-width: $ipad){
+        margin-bottom: 1rem;
+    }
       }
       &:last-child{
         text-align: center;
         margin-top: 2rem;
+        @media only screen and (max-width: $ipad){
+          margin-top: 1.5rem;
+        }
       }
     }
     &__icon{
@@ -450,6 +655,9 @@
       background-color: #fff;
       border: none;
       border-radius: 5px;
+      @media only screen and (max-width: $ipad){
+        padding: .5rem 1.5rem .5rem 1.8rem;
+    }
 
       //  @include respond(tab-port){
       //   width: 100%;
@@ -471,28 +679,36 @@
       }
     }
 
-    &__label{
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-left: 1.2rem;
-      margin-top: 0.2rem;
-      display: block;
-      transition: all, .3s;
-    }
+    // &__label{
+    //   font-size: 1.2rem;
+    //   font-weight: 700;
+    //   margin-left: 1.2rem;
+    //   margin-top: 0.2rem;
+    //   display: block;
+    //   transition: all, .3s;
+    // }
 
-    &__input:placeholder-shown + &__label{
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-1rem);
-    }
+    // &__input:placeholder-shown + &__label{
+    //   opacity: 0;
+    //   visibility: hidden;
+    //   transform: translateY(-1rem);
+    // }
 
     textarea {
       width: 100%;
-      height: auto
+      height: auto;
+      @media only screen and (max-width: $ipad){
+        height: 7rem;
+    }
     }
 
 }
 
+@media only screen and(max-width:$phone){
+  .btn--form{
+  width: 100%;
+}
+}
 
 ///////////////////////////////////////////////////
 // FOOTER//

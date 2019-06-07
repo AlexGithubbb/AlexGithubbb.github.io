@@ -11,18 +11,47 @@
 
 .section-intro{
   padding: 2rem 0;
+  font-size: .8rem;
+  @media only screen and (max-width: $ipad-pro){
+      padding: 1.5rem 0;
+    }
+  @media only screen and (max-width: $ipad){
+      font-size: .7rem;
+      padding: 2rem 0rem;
+    }
+  @media only screen and (max-width: $phone){
+      font-size: .6rem;
+      padding: 1.5rem 0rem;
+    }
 }
 .section-portfolio{
   margin: 0 auto;
   max-width: 80rem;
   padding: 2rem 8rem;
+  @media only screen and (max-width: $ipad-pro){
+      padding: 1.5rem;
+    }
+  @media only screen and (max-width: $ipad-pro){
+      padding: 2rem;
+    }
+  @media only screen and (max-width: $phone){
+      padding: 1rem;
+    }
+    
+
 }
 
 .contact{
   padding: 5rem 0;
+   @media only screen and (max-width: $phone){
+      padding: 2rem 0;
+    }
 }
 
 footer{
   padding: 3rem;
   background-color: var(--color-grey-3);
+  @media only screen and (max-width: $ipad-pro){
+      padding: 2rem;
+    }
 }
