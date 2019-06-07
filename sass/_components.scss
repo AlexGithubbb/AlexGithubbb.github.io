@@ -599,7 +599,7 @@
     &-box{
       width: 70%;
       position: absolute;
-      top: 15%;
+      top: 10%;
       left: 10%;
 
       color: #fff;
@@ -633,11 +633,12 @@
 .form{
   width: 55%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem 1rem 1rem 1rem;
   background-image: linear-gradient(to bottom, rgb(94, 61, 243), rgba(30, 13, 109, 0.787));
 
    @media only screen and (max-width: $phone){
       width: 100%;
+      padding: 2rem;
     }
     &__group{
       width: 90%;
@@ -675,9 +676,7 @@
        @media only screen and (max-width: $phone){
           top: .7rem;
         }
-    }
-
-
+      }
     &__input{
       width: 100%;
       font-size: 1rem;

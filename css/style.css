@@ -577,7 +577,7 @@ footer {
     .contact-box .info-box {
       width: 70%;
       position: absolute;
-      top: 15%;
+      top: 10%;
       left: 10%;
       color: #fff;
       font-size: .8rem; }
@@ -599,11 +599,12 @@ footer {
 .form {
   width: 55%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem 1rem 1rem 1rem;
   background-image: linear-gradient(to bottom, #5e3df3, rgba(30, 13, 109, 0.787)); }
   @media only screen and (max-width: 28.5em) {
     .form {
-      width: 100%; } }
+      width: 100%;
+      padding: 2rem; } }
   .form__group {
     width: 90%;
     margin: 0 auto;
