@@ -424,6 +424,14 @@ footer {
         width: 6.5rem;
         height: 6.5rem;
         transform: translateX(0rem); } }
+  .profile__pic {
+    transform: scale(0.98) translate(-0.2rem, -0.2rem); }
+    @media only screen and (max-width: 50em) {
+      .profile__pic {
+        transform: scale(0.75) translate(-2.1rem, -2rem); } }
+    @media only screen and (max-width: 28.5em) {
+      .profile__pic {
+        transform: scale(0.55) translate(-5.3rem, -5rem); } }
   .profile__text {
     width: 88%;
     line-height: 2;

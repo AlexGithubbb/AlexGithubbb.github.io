@@ -408,6 +408,15 @@
           transform: translateX(0rem);
         }
   }
+  &__pic{
+    transform: scale(.98) translate(-.2rem, -.2rem);
+     @media only screen and (max-width: $ipad){
+         transform: scale(.75) translate(-2.1rem, -2rem);
+        }
+        @media only screen and (max-width: $phone){
+          transform: scale(.55) translate(-5.3rem, -5rem);
+        }
+  }
 
   &__text{
     width: 88%;
