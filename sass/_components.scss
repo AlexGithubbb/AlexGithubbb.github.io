@@ -544,16 +544,19 @@
       font-size: .7rem;
        margin-bottom: .7rem;
        font-weight: 400;
-       padding: 0 .5rem;
+      //  padding: 0 .5rem;
     }
 
     &-github{
       position: absolute;
       bottom: 1rem;
       text-decoration: none;
-       color:var(--color-grey-2);
+      color:var(--color-grey-2);
       &:hover{
         color: #2979d4;
+      }
+      @media only screen and(max-width:$phone){
+        bottom: 1.5rem;
       }
     }
 
@@ -667,15 +670,15 @@
     }
     &__icon{
       position: absolute;
-      top: .6rem;
+      top: .75rem;
       left: .5rem;
       color: rgba(0, 0, 0, 0.5);
        @media only screen and (max-width: $ipad-pro){
-          top: .5rem;
+          top: .65rem;
         }
-       @media only screen and (max-width: $phone){
-          top: .7rem;
-        }
+      //  @media only screen and (max-width: $phone){
+      //     top: .65rem;
+      //   }
       }
     &__input{
       width: 100%;
@@ -751,7 +754,10 @@
 @media only screen and(max-width:$phone){
   .btn--form{
   width: 100%;
-}
+  &:hover{
+    width: 100%;
+  }
+  }
 }
 
 ///////////////////////////////////////////////////
