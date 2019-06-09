@@ -66,7 +66,7 @@ body {
 .section-portfolio {
   margin: 0 auto;
   max-width: 80rem;
-  padding: 2rem 8rem; }
+  padding: 2rem 5rem; }
   @media only screen and (max-width: 65em) {
     .section-portfolio {
       padding: 1.5rem; } }
@@ -500,7 +500,7 @@ footer {
   margin: 0 auto; }
   .cards .card {
     width: calc(100% / 3 - 2rem);
-    height: 20rem;
+    height: 23rem;
     border-radius: 5px;
     overflow: hidden;
     margin: 1rem;
@@ -522,7 +522,7 @@ footer {
       box-shadow: 0rem 4px 8px rgba(0, 0, 0, 0.5); }
     .cards .card-thumbnail {
       width: 100%;
-      height: 50%; }
+      height: 55%; }
       @media only screen and (max-width: 28.5em) {
         .cards .card-thumbnail {
           height: 60%; } }
@@ -530,7 +530,7 @@ footer {
       width: 100%;
       height: 100%; }
     .cards .card-description {
-      height: 50%;
+      height: 45%;
       font-weight: 300;
       text-align: center;
       padding: .5rem;
@@ -558,7 +558,7 @@ footer {
         color: #2979d4; }
       @media only screen and (max-width: 28.5em) {
         .cards .card-github {
-          bottom: 1.1rem; } }
+          bottom: 2rem; } }
 
 .contact-box {
   width: 60%;
@@ -597,14 +597,14 @@ footer {
       top: 10%;
       left: 10%;
       color: #fff;
-      font-size: .8rem; }
+      font-size: .9rem; }
       @media only screen and (max-width: 65em) {
         .contact-box .info-box {
           width: 90%; } }
     .contact-box .info-group {
       width: 100%;
       display: flex;
-      margin-bottom: 3rem;
+      margin-bottom: 2.5rem;
       align-items: center; }
       @media only screen and (max-width: 50em) {
         .contact-box .info-group {
