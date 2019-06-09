@@ -457,19 +457,26 @@ footer {
     margin: 1rem 0 0 1rem;
     transform: translateX(3rem);
     padding: 0 1rem; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 65em) {
       .profile .skills {
-        width: 70%;
+        width: 75%;
         padding: 0rem;
         margin: 1rem 0 0 5rem;
-        transform: translateX(0rem); } }
+        transform: translateX(6rem); } }
+    @media only screen and (max-width: 50em) {
+      .profile .skills {
+        width: 80%;
+        padding: 0rem;
+        margin: 1rem 0 0 5rem;
+        transform: translateX(4rem); } }
     @media only screen and (max-width: 28.5em) {
       .profile .skills {
         width: 100%;
         margin-top: 0;
         margin-left: 0rem;
         padding: 0;
-        text-align: center; } }
+        text-align: center;
+        transform: translateX(0rem); } }
     .profile .skills span {
       display: inline-block; }
     .profile .skills > * {
@@ -544,14 +551,14 @@ footer {
       font-weight: 400; }
     .cards .card-github {
       position: absolute;
-      bottom: 1rem;
+      bottom: .6rem;
       text-decoration: none;
       color: var(--color-grey-2); }
       .cards .card-github:hover {
         color: #2979d4; }
       @media only screen and (max-width: 28.5em) {
         .cards .card-github {
-          bottom: 1.5rem; } }
+          bottom: 1.1rem; } }
 
 .contact-box {
   width: 60%;
