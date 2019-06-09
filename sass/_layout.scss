@@ -10,16 +10,16 @@
 
 .section-intro{
   padding: 2rem 0;
-  font-size: .8rem;
+  font-size: .9rem;
   @media only screen and (max-width: $ipad-pro){
       padding: 1.5rem 0;
     }
   @media only screen and (max-width: $ipad){
-      font-size: .7rem;
+      font-size: .8rem;
       padding: 2rem 0rem;
     }
   @media only screen and (max-width: $phone){
-      font-size: .6rem;
+      font-size: .7rem;
       padding: 1.5rem 0rem;
     }
 }
