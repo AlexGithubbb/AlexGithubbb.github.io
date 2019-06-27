@@ -1,97 +1,21 @@
 .navbar{
+    width: 100%;
+  padding: 0;
+  opacity: .9;
   &-brand{
     padding: 0;
     margin: 0;
-  }
-//   display: flex;
-//   justify-content: space-between;
-//   height: 4rem;
-//   padding-left: 4rem;
-//   @media only screen and (max-width: $phone){
-//    height: 3rem;
-//    padding-left: 0rem;
-//   }
-
-      .logo{
+    .logo{
         font-size: 2.2rem;
         color: #2979d4;
         font-weight: 700;
         margin-bottom: 0;
         font-family: 'Dancing Script', cursive;
       }
-}
-
-//   &__list{
-//     list-style: none;
-//     color: white;
-//     width: 30%;
-//     display: flex;
-//     margin-right: 3rem;
-//         @media only screen and (max-width: $phone){
-//           width: 60%;
-//           margin-right: 0rem;
-//           width: 100%;
-//         }
-//   }
-
-  // &__item{
-  //   padding:0 2rem;
-  //   transition: background-color, .3s;
-  //   &:hover{
-  //    background-color: rgba(rgb(63, 42, 155), .7);
-  //   //  cursor: pointer;
-  //   }
-  // }
-
-  // &__link,
-  // &__link:link{
-  //   width: 33%;
-  //   padding:0 2rem;
-  //   height: 100%;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   justify-content: center;
-  //   text-decoration: none;
-  //   color: rgb(199, 197, 197);
-  //   font-weight: 300;
-  //   font-size: .8rem;
-  //   font-family: var(--nunito);
-  //       @media only screen and (max-width: $phone){
-  //         font-size: .5rem;
-  //         width: calc(100% / 3);
-  //       }
-
-  //    transition: background-color, .3s;
-  //     &:hover{
-  //     // background-color: rgba(75, 39, 233, .7);
-  //     background-color: #2979d4;
-  //     }
-  //   }
-  //   .about-icon{
-  //     margin-bottom: .2rem;
-  //     font-size: 1rem;
-  //     @media only screen and (max-width: $phone){
-  //        font-size: .7rem;
-  //       }
-  //   }
-// }
-.navbar{
-  width: 100%;
-  padding: 0;
-  opacity: .9;
-  // .dark-overlay{
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   background: rgba(0, 0, 0, 0.6);
-  // }
-}
-
-.navbar-nav{
-  flex-direction: row;
+  }
+  .navbar-nav{
+    flex-direction: row;
+  }
 }
 
 .nav-item{
@@ -260,17 +184,6 @@
     width: 7rem;
   }
  }
-
-// .btn:hover::after {
-//   transform: scaleX(1.3) scaleY(1.6);
-//   opacity: 0;
-//  }
-
-//  .btn:active,
-//  .btn:focus{
-//    transform: translateY(0.1rem);
-//    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-//  }
 
 
 ///////////////////////////////////////////////////
@@ -665,7 +578,7 @@
         h2{
           font-size: 1.6rem;
         }
-        
+
     }
       .text{
         width: 100%;
@@ -773,21 +686,6 @@
     }
 
 
-    // &__label{
-    //   font-size: 1.2rem;
-    //   font-weight: 700;
-    //   margin-left: 1.2rem;
-    //   margin-top: 0.2rem;
-    //   display: block;
-    //   transition: all, .3s;
-    // }
-
-    // &__input:placeholder-shown + &__label{
-    //   opacity: 0;
-    //   visibility: hidden;
-    //   transform: translateY(-1rem);
-    // }
-
     textarea {
       width: 100%;
       height: auto;
@@ -798,14 +696,6 @@
 
 }
 
-@media only screen and(max-width:$phone){
-  // .btn--form{
-  // width: 100%;
-  // &:hover{
-  //   width: 100%;
-  // }
-  // }
-}
 
 ///////////////////////////////////////////////////
 // FOOTER//
