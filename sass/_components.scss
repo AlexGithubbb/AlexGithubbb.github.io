@@ -443,6 +443,7 @@
   flex-wrap: wrap;
   margin: 0 auto;
   .card {
+    border: 0px;
     width: calc(100% / 3 - 2rem);
     height: 23rem;
     border-radius: 5px;
